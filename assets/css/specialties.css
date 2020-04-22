@@ -1,0 +1,64 @@
+body#careerPersonal header {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.45), 
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("/images/specialtySplashes/career-personal.jpg");
+}
+
+body#stressAnxiety header {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.45), 
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("/images/specialtySplashes/stress.jpg");
+}
+
+body#relationships header{
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.45), 
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("/images/specialtySplashes/relationships.jpg");
+}
+
+body#spiritual header {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.45), 
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("/images/specialtySplashes/spiritual.jpg");
+}
+
+body header#header {
+    height:50vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    
+    min-height: 0 !important;
+    padding-top:10em !important;
+    padding-bottom:10em !important;
+}
+
+    /* body header#header h1 {
+        z-index:999999;
+    } */
+
+    body header#header .readMore {
+        display:none;
+    }
+
+body section {
+    margin-top:3em;
+    margin-bottom:3em;
+}
+
+body section .contact {
+    font-family: 'Baloo Bhaina 2', sans-serif;
+    margin-top:3em;
+}

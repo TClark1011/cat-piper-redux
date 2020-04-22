@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Fractal by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <style>
+        .contactIconWrapper {
+            width:10em;
+            height:10em;
+            margin:auto;
+            border: 5px solid rgb(130, 130, 130);
+            display:flex;
+            font-family:'Material Icons';
+            border-radius:100%;
+            margin-bottom:2em;
+            margin-top:2em;
+            cursor:pointer;
+            transition:color 0.2s, border-color 0.2s;
+        }
+
+        .contactIconWrapper:hover, 
+        .contactIconWrapper:hover .contactIcon{
+            color:black;
+            border-color:black;
+            transition:color 0.2s, border-color 0.2s;
+        }
+
+        .contactIconWrapper .contactIcon {
+            display:block;
+            margin:auto;
+            font-size:5em;
+            transition:color 0.2s;
+        }
+
+        .contactDetail {
+            font-size:200%;
+            margin-top:1em;
+            margin-bottom:1em;
+            display:block;
+            text-decoration:none;
+            border:none;
+            cursor:pointer;
+        }
+
+        .contactDetail:hover {
+            color:black;
+            transition-duration:0.2s;
+        }
+
+        ul.actions li a {
+            padding:0;
+            width:5em;
+            margin:auto;
+        }
+
+        @media screen and (orientation:portrait) {
+            .contactDetail {
+                font-size:150%;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="is-preload">
+    <button id=navToggle><span>menu</span></button>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/assets/pages/stress-anxiety.html">Stress and Anxiety</a></li>
+            <li><a href="/assets/pages/career-personal.html">Career and Interpersonal Coaching</a></li>
+            <li><a href="/assets/pages/relationships.html">Relationship Counselling</a></li>
+            <li><a href="/assets/pages/spiritual.html">Spiritual Psychology</a></li>
+            <li><a href="/assets/pages/contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <header id="header" class="specialty careerPersonal">
+        <div class="content">
+            <h1>Let's Talk</h1>
+            <ul class="actions">
+                <li><a href="tel:0414700761" class="button primary icon solid">phone</a></li>
+                <li><a href="mailto:cat@catpiperpsychology.com" class="button primary icon solid">email</a></li>
+			</ul>
+            <p id=readMoreText class=readMore>Read More</p>
+            <span id=readMoreArrow class="material-icons readMore">keyboard_arrow_down</span>
+        </div>
+    </header>
+
+    <section>
+        <div class=contactIconWrapper id=phoneWrapper onClick="location.href='mailto:cat@catpiperpsychology.com'"><h2 id=emailIcon class=contactIcon>email</h2></div>
+        <a class=contactDetail href="mailto:cat@catpiperpsychology.com">cat@catpiperpsychology.com</a>
+        <p>
+            Let me know your number and I can text or phone you back (usually within 24 hours I promise 😊)
+        </p>
+        <div class=contactIconWrapper onClick="location.href='tel:0414700761'"><h2 id=phoneIcon class=contactIcon>phone</h2></div>
+        <a class=contactDetail href="tel:0414700761">0414700761</a>
+        <p>
+            You can text me and I will respond with either a text or a phone call – which ever you prefer.<br><br>
+
+            If you would like to leave a voice message you can all do that – Just leave your name and phone number
+            clearly and if you would like to leave a little bit of information about yourself that would be great too,
+            but I know that a lot of people do not like talking on the phone that much so it’s ok if you just want to
+            text me.<br><br>
+
+            I often do not answer the phone because I am in session, but I promise that I will call you back as soon as
+            I can.<br><br>
+
+            I would love to help you and I look forward to hearing from you soon
+            Kindest Regards<br><br>
+
+            Cat
+        </p>
+    </section>
+
+    <footer id="footer">
+		<ul class="icons">
+			<li><a href="https://www.facebook.com/catpiperpsychology/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+		</ul>
+		<p class="copyright">Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+	</footer>
+
+    <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.scrolly.min.js"></script>
+    <script src="../js/browser.min.js"></script>
+    <script src="../js/breakpoints.min.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/nav.js"></script>
+
+</body>
+
+</html>
