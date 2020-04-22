@@ -13,24 +13,18 @@ function toggleNav() {
 }
 
 $('body').click(function(evt){ 
-    if ($(evt.target).is($("button#navToggle, button#navToggle span"))) {
+    var onButton = $(evt.target).is($("button#navToggle, button#navToggle span"))
+    var outsideNavWhileOpen =  !$(evt.target).is("nav") && $("nav").hasClass("open")
+    if (onButton || outsideNavWhileOpen) {
         toggleNav();
-    } //else if (!$(evt.target).is($("nav"))) {
-    else if (!$(evt.target).is("nav") && $("nav").hasClass("open")) {
-        //# If any element other than nav menu is clicked
-        toggleNav();
-    }
+    } 
 });
 
+$('body')
+
 $('body').on('touchstart', function(evt){ 
-    if ($(evt.target).is($("button#navToggle, button#navToggle span"))) {
-        toggleNav();
-        evt.stopPropagation();
-    } //else if (!$(evt.target).is($("nav"))) {
-    else if (!$(evt.target).is("nav") && $("nav").hasClass("open")) {
-        //# If any element other than nav menu is clicked
-        evt.stopPropagation();
-        toggleNav();
+    if($('nav').hasClass('open')) {
+        toggleNav;
     }
 });
 
