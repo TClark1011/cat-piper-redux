@@ -4270,7 +4270,6 @@ input, select, textarea {
 			margin:auto;
 			line-height:normal;
 			font-family: 'Material Icons';
-			z-index:999;
 		}
 
 	@media screen and (min-width: 1680px) {
