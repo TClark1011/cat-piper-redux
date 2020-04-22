@@ -24,7 +24,7 @@ $('body')
 
 $('body').on('touchstart', function(evt){ 
     if($('nav').hasClass('open')) {
-        toggleNav;
+        toggleNav();
     }
 });
 
