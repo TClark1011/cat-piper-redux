@@ -25,9 +25,11 @@ $('body').click(function(evt){
 $('body').on('touchstart', function(evt){ 
     if ($(evt.target).is($("button#navToggle, button#navToggle span"))) {
         toggleNav();
+        evt.stopPropagation();
     } //else if (!$(evt.target).is($("nav"))) {
     else if (!$(evt.target).is("nav") && $("nav").hasClass("open")) {
         //# If any element other than nav menu is clicked
+        evt.stopPropagation();
         toggleNav();
     }
 });
