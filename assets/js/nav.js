@@ -31,19 +31,3 @@ $('body').on('touchstart', function(evt){
 $('nav').on('touchstart',function(evt) {
     evt.stopPropagation();
 })
-
-$(document).ready(function() {
-	$(".spotlight .image").css({'height':$(".spotlight .image").first().width() + "px"})
-})
-
-$(window).resize(function() {
-	$(".spotlight .image").css({'height':$(".spotlight .image").first().width() + "px"})
-	// $("h2.contactIcon").css({'height':$("h2.contactIcon").first().width() + "px"})
-})
-
-$('.readMore').click(function(evt) {
-    window.scrollBy({
-        top: $("header#header").innerHeight(),
-        behavior:'smooth'
-    });
-})
