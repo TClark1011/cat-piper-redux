@@ -1,5 +1,5 @@
 
-- Edit page meta data (langauge, favicon, keywords etc)
+- Fix favicon on chrome
 - Change background image on homepage
 - Ask about splash title/subtitle changees
 - Add secondary color decotations (text highlighting, keywords, etc)
@@ -24,5 +24,5 @@ DONE:
 - FAQ Page
 - Contact Page
 - Modify social media footer links
-- Edit page meta data (title, description)
+- Edit page meta data
 - Make sure all footers are consistent
