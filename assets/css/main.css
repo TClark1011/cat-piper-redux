@@ -4385,10 +4385,14 @@ input, select, textarea {
 				padding-top:1em;
 			}
 
-	section .spotlight .content .actions {
-		width:min-content;
-		margin:auto;
-		margin-top:2em;
+				section .spotlight .content .actions {
+					width:min-content;
+					margin:auto;
+					margin-top:2em;
+				}
+	
+	section .spotlight .image {
+		margin-top:1em !important;
 	}
 
 	section#about ul#credentials {

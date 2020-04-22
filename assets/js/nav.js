@@ -32,11 +32,18 @@ $('nav').on('touchstart',function(evt) {
     evt.stopPropagation();
 })
 
-// $(document).scroll(function() {
-//     // var buttonOffset =  $(document).scrollTop() + 16;
-//     $("button#navToggle").css("top", $(document).scrollTop() + 16);
-//     $("nav").css({
-//         top     :    $(document).scrollTop(),
-//         height  :   '120vh'
-//     }); //120vh because android phones handle vh weirdly with bottom toolbar
-// });
+$(document).ready(function() {
+	$(".spotlight .image").css({'height':$(".spotlight .image").first().width() + "px"})
+})
+
+$(window).resize(function() {
+	$(".spotlight .image").css({'height':$(".spotlight .image").first().width() + "px"})
+	// $("h2.contactIcon").css({'height':$("h2.contactIcon").first().width() + "px"})
+})
+
+$('.readMore').click(function(evt) {
+    window.scrollBy({
+        top: $("header#header").innerHeight(),
+        behavior:'smooth'
+    });
+})

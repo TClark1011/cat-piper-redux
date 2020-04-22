@@ -1,12 +1,15 @@
 
-- Edit page meta data (description, etc)
+- Edit page meta data (langauge, favicon, keywords etc)
 - Change background image on homepage
 - Ask about splash title/subtitle changees
 - Add secondary color decotations (text highlighting, keywords, etc)
-- Add htaccess file to make urls nicer
-- Use swiper.js to allow for swiping to open/close nav menu
-- redesign contact me page?
 - SEO
+- Test removing main.js
+
+MAYBE:
+- htaccess file to make urls nicer
+- redesign contact me page
+- Use swiper.js to allow for swiping to open/close nav menu
 
 DONE:
 - About Page
@@ -20,5 +23,5 @@ DONE:
 - FAQ Page
 - Contact Page
 - Modify social media footer links
-- Edit page meta data (title)
+- Edit page meta data (title, description)
 - Make sure all footers are consistent
