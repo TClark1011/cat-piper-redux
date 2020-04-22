@@ -24,7 +24,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	font-family: 'Baloo Bhaina 2', sans-serif;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -4180,10 +4182,20 @@ input, select, textarea {
 		header#header .content {
 			margin:0;
 		}
+
+			header#header .content  p{
+				margin-left:2em;
+				margin-right:2em;
+			}
 	
-		header#header .content a.button {
-			padding:0 1em;
-		}
+			header#header .content a.button {
+				padding:0 1em;
+			}
+
+			header#header .content  .readMore{
+				margin:auto;
+			}
+
 
 	.open {
 		transition: left 0.5s;
@@ -4245,7 +4257,6 @@ input, select, textarea {
 		margin-left:1em;
 		left:0;
 		top:1em;
-		font-family: 'Material Icons';
 		font-weight:normal;
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -4258,6 +4269,7 @@ input, select, textarea {
 			font-size:20pt;
 			margin:auto;
 			line-height:normal;
+			font-family: 'Material Icons';
 		}
 
 	@media screen and (min-width: 1680px) {
@@ -4337,28 +4349,41 @@ input, select, textarea {
 		text-align:center;
 		margin:auto;
 		width:90% !important;
+		padding:0 !important;
+		margin-top: 1em;
 	}
 
-	section .inner {
-		width:100% !important;
-		margin:auto !important;
-	}
+		section .inner {
+			width:100% !important;
+			margin:auto !important;
+		}
 
-	section p {
-		margin: auto;
-		font-family: 'Baloo Bhaina 2', sans-serif;
-		font-size:1.5em !important;
-		line-height:1.5;
-	}
+		section p {
+			margin: auto;
+			font-family: 'Baloo Bhaina 2', sans-serif;
+			font-size:1.5em !important;
+			line-height:1.5;
+		}
+
+		section .contactButton {
+			margin-bottom:1em;
+		}
+
+		section h2 {
+			margin-top:1em;
+		}
 
 	section.spotlight {
 		width:100% !important;
 	}
 
-	section.spotlight .content {
-		text-align:left;
-		margin:auto;
-	}
+		section.spotlight .content {
+			text-align:left;
+		}
+
+			section.spotlight .content h3 {
+				padding-top:1em;
+			}
 
 	section .spotlight .content .actions {
 		width:min-content;
@@ -4366,6 +4391,68 @@ input, select, textarea {
 		margin-top:2em;
 	}
 
+	section#about ul#credentials {
+		list-style:none;
+	}
+
+	section#faq #questions {
+		max-width:100%;
+		margin: 0 auto;
+	}
+
+		section#faq #questions #questionsInner {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-start;
+			width:100%;
+		}
+
+			section#faq #questions #questionsInner .question {
+				margin:1em;
+				flex-basis: 30%;
+				-ms-flex: auto;
+				width: 259px;
+				position: relative;
+				box-sizing: border-box;
+				background-color:#f2f2f2;
+				padding:1em;
+				box-sizing:border-box;
+				border-radius:5px;
+			}
+
+				section#faq #questions #questionsInner .question .questionTitle {
+					display:inline-block;
+					width:100%;
+					text-align:center;
+				}
+
+				section#faq #questions #questionsInner .question .questionBody {
+					text-align:left;
+					word-wrap:break-word;
+				}
+
+			@media(max-width: 1333px) {
+				section#faq #questions #questionsInner .question {
+					flex-basis: calc(30% - 4em);
+				}
+			}
+			@media(max-width: 1073px) {
+				section#faq #questions #questionsInner .question {
+					flex-basis: calc(50% - 4em);
+				}
+			}
+			@media(max-width: 815px) {
+				section#faq #questions #questionsInner .question {
+					flex-basis: calc(50% - 4em);
+				}
+			}
+			@media(max-width: 555px) {
+				section#faq #questions #questionsInner .question {
+					flex-basis: 100%;
+				}
+			}
+
 	footer {
 		margin-top:10vh;
 	}
+

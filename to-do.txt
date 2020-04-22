@@ -1,12 +1,13 @@
 - Modify social media footer links
 - Edit page meta data (title, description, etc)
 - Change background iamge on homepage
-- Maybe change Splash title to "Cat Piper Theraby" or something like that
+- Ask about splash title/subtitle changees
+- Add secondary color decotations (text highlighting, keywords, etc)
 - Make sure all footers are consistent
-- FAQ Page
-- Contact Page
 - Add htaccess file to make urls nicer
 - Use swiper.js to allow for swiping to open/close nav menu
+- redesign contact me page?
+- SEO
 
 DONE:
 - About Page
@@ -17,3 +18,5 @@ DONE:
 - Change specialty thumbnails on homepage
 - Fix menu button position relative to navigation menu (the distance between button and menu changees on button close and open)
 - Fix contact buttons
+- FAQ Page
+- Contact Page
