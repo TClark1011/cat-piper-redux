@@ -5,6 +5,7 @@
 - Add secondary color decotations (text highlighting, keywords, etc)
 - SEO
 - Test removing main.js
+- IE icons bug (not loading)
 
 MAYBE:
 - htaccess file to make urls nicer

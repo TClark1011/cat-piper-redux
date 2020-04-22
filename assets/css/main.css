@@ -4270,6 +4270,7 @@ input, select, textarea {
 			margin:auto;
 			line-height:normal;
 			font-family: 'Material Icons';
+			z-index:999;
 		}
 
 	@media screen and (min-width: 1680px) {
@@ -4343,8 +4344,6 @@ input, select, textarea {
 		font-family: 'Baloo Bhaina 2', sans-serif;
 	}
 
-	body
-
 	section {
 		text-align:center;
 		margin:auto;
@@ -4390,6 +4389,10 @@ input, select, textarea {
 					margin:auto;
 					margin-top:2em;
 				}
+
+	section .spotlight:nth-child(2n) .content .actions {
+		text-align:right;
+	}
 	
 	section .spotlight .image {
 		margin-top:1em !important;
