@@ -4409,8 +4409,9 @@ input, select, textarea {
 
 			section#faq #questions #questionsInner .question {
 				margin:1em;
-				flex-basis: 30%;
 				-ms-flex: auto;
+				flex:initial;
+				flex-basis: 30%;
 				width: 259px;
 				position: relative;
 				box-sizing: border-box;
