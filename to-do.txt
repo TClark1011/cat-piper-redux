@@ -1,9 +1,8 @@
-- Modify social media footer links
-- Edit page meta data (title, description, etc)
-- Change background iamge on homepage
+
+- Edit page meta data (description, etc)
+- Change background image on homepage
 - Ask about splash title/subtitle changees
 - Add secondary color decotations (text highlighting, keywords, etc)
-- Make sure all footers are consistent
 - Add htaccess file to make urls nicer
 - Use swiper.js to allow for swiping to open/close nav menu
 - redesign contact me page?
@@ -20,3 +19,6 @@ DONE:
 - Fix contact buttons
 - FAQ Page
 - Contact Page
+- Modify social media footer links
+- Edit page meta data (title)
+- Make sure all footers are consistent
