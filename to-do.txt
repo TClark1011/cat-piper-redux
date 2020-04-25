@@ -1,16 +1,15 @@
 
 - Fix favicon on chrome
-- Change background image on homepage
+- Add images [potentially very big]
 - Ask about splash title/subtitle changees
 - Add secondary color decotations (text highlighting, keywords, etc)
 - SEO
-- Test removing main.js
-- IE icons bug (not loading)
 
 MAYBE:
 - htaccess file to make urls nicer
 - redesign contact me page
 - Use swiper.js to allow for swiping to open/close nav menu
+- Format list of credentials
 
 DONE:
 - About Page
@@ -26,3 +25,4 @@ DONE:
 - Modify social media footer links
 - Edit page meta data
 - Make sure all footers are consistent
+- IE contact/menu icons bug (not loading)

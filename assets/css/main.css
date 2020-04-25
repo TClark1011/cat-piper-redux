@@ -1,6 +1,24 @@
 @import url(fontawesome-all.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: 
+		url(/assets/fonts/Material-Icons/MaterialIcons-Regular.eot), /* For IE6-8 */
+		url(/assets/fonts/Material-Icons/MaterialIcons-Regular.woff) format("woff"),
+		url(/assets/fonts/Material-Icons/MaterialIcons-Regular.woff2) format("woff2"),
+		url(/assets/fonts/Material-Icons/MaterialIcons-Regular.ttf) format("ttf"); 
+  } 
+
+* {
+	font-feature-settings:'liga';
+}
+
+.material-icons {
+	font-family:'Material Icons';
+}
 
 /*
 	Fractal by HTML5 UP
