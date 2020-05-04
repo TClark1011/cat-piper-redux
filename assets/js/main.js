@@ -20,11 +20,11 @@
 		});
 
 	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+		// $window.on('load', function() {
+		// 	window.setTimeout(function() {
+		// 		$body.removeClass('is-preload');
+		// 	}, 100);
+		// });
 
 	// Mobile?
 		if (browser.mobile)
@@ -50,11 +50,11 @@
 })(jQuery);
 
 $(document).ready(function() {
-	$(".spotlight .image").css({'height':$(".spotlight .image").first().width() + "px"})
+	setSpecialityCardHeight();
 })
 
 $(window).resize(function() {
-	$(".spotlight .image").css({'height':$(".spotlight .image").first().width() + "px"})
+	setSpecialityCardHeight();
 })
 
 $('.readMore').click(function(evt) {
@@ -63,3 +63,16 @@ $('.readMore').click(function(evt) {
         behavior:'smooth'
     });
 })
+
+function setSpecialityCardHeight() {
+	//# Set height of specialty card content to be equal to the tallest one
+	if ($(".specialtyCard").css("flex-basis") != "100%") {
+		var maxHeight = -1;
+		$(".specialtyCard .content p").each(function() {
+			maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+		});
+		$(".specialtyCard .content p").each(function() {
+			$(this).height(maxHeight);
+		});
+	}
+}

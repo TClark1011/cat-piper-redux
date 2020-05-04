@@ -1,9 +1,26 @@
-
-- Fix favicon on chrome
 - Add images [potentially very big]
 - Ask about splash title/subtitle changees
-- Add secondary color decotations (text highlighting, keywords, etc)
+- Add secondary color decorations (text highlighting, keywords, etc)
 - SEO
+- Larger margins to whole page on desktop site
+- Faq
+	+ Width on laptop
+	+ Darker FAQ question text
+	+ Faq answer smaller
+	+ Answers start at same height
+	+ Font smaller
+	+ Leveled ttext
+- Add happiness center to footer
+- Smaller general text
+- Set no script sa default
+- Images
+	+ Photo of Cathy in about me
+- Accent colour (like the Laura therapy page)
+- Career thumbnal is slightly lower than the other thumbnails
+- Remove animated page openings
+- Fix "a/h3" tags in specialty cards
+- Crop relationships splash
+- Redesign buttons
 
 MAYBE:
 - htaccess file to make urls nicer
@@ -26,3 +43,15 @@ DONE:
 - Edit page meta data
 - Make sure all footers are consistent
 - IE contact/menu icons bug (not loading)
+- Fix favicon on chrome
+- Images
+	+ "Begin" coffee mag as splash page background for contact me
+	+ Female stress picture for image on page (not for the thumbnail)
+	+ Flower for spiritual specialty thumbnail
+		+ Grass for page
+		+ In general, specialties should have seperate images for their thumbnail and splash pages
+	+ Relationship images - Man holding hair
+		+ Guy and girl on bench (for page image)
+		+ Keep current thumbnail
+- Width scaling for specialties
+- Specialties in columns

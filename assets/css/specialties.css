@@ -13,7 +13,7 @@ body#stressAnxiety header {
             rgba(0, 0, 0, 0.45), 
             rgba(0, 0, 0, 0.45)
         ),
-        url("/images/specialtySplashes/stress.jpg");
+        url("/images/specialtySplashes/stressSplash.jpg");
 }
 
 body#relationships header{
@@ -23,6 +23,7 @@ body#relationships header{
             rgba(0, 0, 0, 0.45)
         ),
         url("/images/specialtySplashes/relationships.jpg");
+    background-size: 300%;
 }
 
 body#spiritual header {
@@ -32,6 +33,7 @@ body#spiritual header {
             rgba(0, 0, 0, 0.45)
         ),
         url("/images/specialtySplashes/spiritual.jpg");
+    background-position: 50% 75% !important;
 }
 
 body header#header {
