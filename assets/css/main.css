@@ -4433,14 +4433,6 @@ input, select, textarea {
 				object-fit:cover;
 			}
 
-			@media(max-width: 1000px) {
-				section#welcome .inner img#portrait {
-					flex-basis:100%;
-					width:100%;
-					margin:0;
-				}
-			}
-
 			section#welcome .inner p {
 				flex-basis:80%;
 				max-width:65%;
@@ -4449,9 +4441,16 @@ input, select, textarea {
 			}
 
 			@media(max-width: 1000px) {
+				section#welcome .inner img#portrait {
+					flex-basis:100%;
+					width:100%;
+					margin:0;
+				}
+
 				section#welcome .inner p {
 					flex-basis:100%;
 					max-width:100%;
+					margin-left:0;
 				}
 			}
 
