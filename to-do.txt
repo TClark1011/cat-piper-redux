@@ -12,7 +12,7 @@
 	+ Leveled ttext
 - Add happiness center to footer
 - Smaller general text
-- Set no script sa default
+- Set no script as default
 - Images
 	+ Photo of Cathy in about me
 - Accent colour (like the Laura therapy page)
@@ -21,12 +21,19 @@
 - Fix "a/h3" tags in specialty cards
 - Crop relationships splash
 - Redesign buttons
+- Make specialty thumbnails link to specialty pages
+- Remove Spiritual Psychology
+- Add margin to all body text
+- Change fonts ;(
+- redesign contact me page
+- Hide all mentions of spiritual psychology
+
 
 MAYBE:
 - htaccess file to make urls nicer
-- redesign contact me page
 - Use swiper.js to allow for swiping to open/close nav menu
 - Format list of credentials
+- Change buttons
 
 DONE:
 - About Page

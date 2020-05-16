@@ -51,6 +51,7 @@
 
 $(document).ready(function() {
 	setSpecialityCardHeight();
+	setPortraitWidth();
 })
 
 $(window).resize(function() {
@@ -74,5 +75,16 @@ function setSpecialityCardHeight() {
 		$(".specialtyCard .content p").each(function() {
 			$(this).height(maxHeight);
 		});
+		maxHeight = -1;
+		$(".specialtyCard h3.specialtyTitle").each(function() {
+			maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+		});
+		$(".specialtyCard h3.specialtyTitle").each(function() {
+			$(this).height(maxHeight);
+		});
 	}
+}
+
+function setPortraitWidth() {
+	$("section#welcome .inner img#portrait").height($("section#welcome .inner p").height()*0.9)
 }

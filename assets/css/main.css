@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
 @font-face {
 	font-family: 'Material Icons';
 	font-style: normal;
@@ -43,7 +43,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Baloo Bhaina 2', sans-serif;
+	font-family: 'Baloo 2', sans-serif;
 }
 
 article, aside, details, figcaption, figure,
@@ -142,7 +142,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		color: #999999;
+		color: #6b6b6b;
 	}
 
 	html, input, select, textarea {
@@ -360,7 +360,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #828282;
+		color: rgb(19, 32, 32);
 	}
 
 	blockquote {
@@ -3566,8 +3566,8 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-color: #4696e5;
-		color: #d1e5f9;
+		/* background-color: #4696e5; */
+		color:rgb(230, 230, 230);
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3581,10 +3581,16 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("images/overlay.png"), url("images/pattern-size1.svg");
-		background-position: top left, center center;
-		background-attachment: fixed, fixed;
-		background-size: auto, cover;
+		/* background-image: url("images/overlay.png"), url("images/pattern-size1.svg"); */
+		background:
+			linear-gradient(
+				rgba(0, 0, 0, 0.45), 
+				rgba(0, 0, 0, 0.45)
+			),
+			url("/images/splash.jpg");
+		background-position: center, right;
+		/* background-attachment: fixed, fixed; */
+		background-size: cover;
 		height: 100vh;
 		min-height: 35em;
 	}
@@ -3622,7 +3628,8 @@ input, select, textarea {
 			#header .button.primary {
 				box-shadow: none;
 				background-color: #ffffff;
-				color: #4696e5 !important;
+				/* color: #4696e5 !important; */
+				color:black !important;
 			}
 
 		#header label {
@@ -3846,7 +3853,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#header {
-				background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
+				/* background-image: url("images/overlay.png"), url("images/pattern-size2.svg"); */
 			}
 
 		}
@@ -3897,7 +3904,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				background-image: url("images/overlay.png"), url("images/pattern-size3.svg");
+				/* background-image: url("images/overlay.png"), url("images/pattern-size3.svg"); */
 			}
 
 				#header h1 {
@@ -4013,6 +4020,12 @@ input, select, textarea {
 
 	}
 
+/* Global */
+	.highlight {
+		color:#4EC5F1;
+		font-weight:600;
+	}
+
 /* Main */
 
 	#main {
@@ -4110,19 +4123,61 @@ input, select, textarea {
 			margin:0;
 		}
 
-			header#header .content  p{
-				margin-left:2em;
-				margin-right:2em;
+			header#header .content h1 {
+				text-align:left;
+				margin-left:3vw
 			}
-	
+
+			header#header .content  p#siteSynopsis {
+				margin-left:3vw;
+				text-align:left;
+				max-width:60%;
+			}
+
+			header#header .content ul.actions {
+				/* width:50%; */
+			}
+
 			header#header .content a.button {
 				padding:0 1em;
 			}
 
-			header#header .content  .readMore{
+			header#header .content .readMoreWrapper {
+				/* width:50%; */
+			}
+
+			header#header .content .readMoreWrapper .readMore{
 				margin:auto;
 			}
 
+	/* @media (max-width:600px) {
+		header#header .content {
+			margin:0;
+			margin-top:40px;
+			margin-bottom:auto;
+		}
+
+			header#header .content h1 {
+				text-align:left;
+				margin-left:3vw
+			}
+
+			header#header .content  p#siteSynopsis {
+				margin-left:3vw;
+				text-align:left;
+				max-width:60%;
+			}
+
+			header#header .content a.button {
+				margin-bottom:0;
+				margin-top:50%;
+				padding:0 1em;
+			}
+
+			header#header .content .readMoreWrapper .readMore{
+				margin:auto;
+			}
+	} */
 
 	.open {
 		transition: left 0.5s;
@@ -4261,13 +4316,12 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
-		font-family: 'Baloo Bhaina 2', sans-serif;
-		font-size:1.5em;
+		font-family: 'Baloo 2', sans-serif;
 		line-height:1.5;
 	}
 
 	li {
-		font-family: 'Baloo Bhaina 2', sans-serif;
+		font-family: 'Baloo 2', sans-serif;
 	}
 
 	section {
@@ -4277,6 +4331,58 @@ input, select, textarea {
 		padding:0 !important;
 		margin-top: 1em;
 	}
+	
+	section.main {
+		max-width:60%;
+		padding-bottom:4em !important;
+		border-bottom: solid 2px #eeeeee;
+	}
+		@media(max-width: 1333px) {
+			section.main {
+				max-width:70%;
+			}
+		}
+
+		@media(max-width: 1000px) {
+			section.main {
+				max-width:80%;
+			}
+		}
+
+		@media(max-width: 800px) {
+			section.main {
+				max-width:90%;
+			}
+		}
+
+		section p.body {
+			/*MAIN FONT SETTING:
+				This should be the selector to change font size for body font
+			*/
+			font-size:1.3em;
+			margin:0;
+		}
+
+		/* @media(max-width: 1333px) {
+			section p {
+				margin: 0 15vw;
+			}
+		}
+		@media(max-width: 1073px) {
+			section p {
+				margin: 0 10vw;
+			}
+		}
+		@media(max-width: 815px) {
+			section p {
+				margin: 0 5vw;
+			}
+		}
+		@media(max-width: 555px) {
+			section p {
+				margin: 0 2vw;
+			}
+		} */
 
 		section .inner {
 			width:100% !important;
@@ -4284,9 +4390,8 @@ input, select, textarea {
 		}
 
 		section p {
-			margin: auto;
-			font-family: 'Baloo Bhaina 2', sans-serif;
-			font-size:1.5em !important;
+			/* margin: auto; */
+			font-family: 'Baloo 2', sans-serif;
 			line-height:1.5;
 		}
 
@@ -4298,31 +4403,118 @@ input, select, textarea {
 			margin-top:1em;
 		}
 
-	section.spotlight {
-		width:100% !important;
+	section#introduction {
+		margin:auto;
+		margin-top:4em !important;
 	}
 
-		section.spotlight .content {
-			text-align:left;
-		}
+	section#welcome {
+		/* margin-top:4em !important; */
+	}
 
-			section.spotlight .content h3 {
-				padding-top:1em;
+		section#welcome .inner {
+			display: flex;
+			flex-direction: row;
+			flex-wrap:wrap;
+			justify-content: flex-start;
+		}
+			section#welcome .inner img#portrait,
+			section#welcome .inner p {
+				flex:initial;
+				position:relative;
+				-ms-flex: auto;
+				margin:0 auto;
 			}
 
-				section .spotlight .content .actions {
-					width:min-content;
-					margin:auto;
-					margin-top:2em;
-				}
+			section#welcome .inner img#portrait {
+				margin:auto 0 !important;
+				flex-basis:10%;
+				width:30%;
+				object-fit:cover;
+			}
 
-	section .spotlight:nth-child(2n) .content .actions {
-		text-align:right;
-	}
+			@media(max-width: 1000px) {
+				section#welcome .inner img#portrait {
+					flex-basis:100%;
+					width:100%;
+					margin:0;
+				}
+			}
+
+			section#welcome .inner p {
+				flex-basis:80%;
+				max-width:65%;
+				margin:0;
+				margin-left:2em;
+			}
+
+			@media(max-width: 1000px) {
+				section#welcome .inner p {
+					flex-basis:100%;
+					max-width:100%;
+				}
+			}
+
+		section#specialties {
+			margin: 0 auto;
+		}
 	
-	section .spotlight .image {
-		margin-top:1em !important;
-	}
+			section#specialties .inner.alt {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: flex-start;
+				/* width:10% !important; */
+			}
+	
+				section#specialties .inner.alt .specialtyCard {
+					margin:1em auto;
+					-ms-flex: auto;
+					flex:initial;
+					flex-basis: 30%;
+					/* width: 10% !important; */
+					position: relative;
+					box-sizing: border-box;
+					/* padding:0.1vw !important; */
+					border:none;
+				}
+				@media(max-width: 800px) {
+					section#specialties {
+						max-width:100%;
+					}
+						section#specialties .inner.alt .specialtyCard {
+							flex-basis:100%;
+						}
+				}
+	
+					section#specialties .inner.alt .specialtyCard a {
+						border:none;
+					}
+				
+						section#specialties .inner.alt .specialtyCard img{
+							width:100%;
+							height:25vh;
+							object-fit:cover;
+						}
+	
+	
+					section#specialties .inner.alt .specialtyCard .content h3 {
+						/* height:2em; */
+						margin-bottom:0;
+						color:rgb(19, 32, 32);
+					}
+	
+	
+					section#specialties .inner.alt .specialtyCard .content .actions {
+						margin:auto;
+						margin-top:1em;
+						width:min-content;
+					}
+	
+						section#specialties .inner.alt .specialtyCard .content .actions a {
+							border-radius:0;
+							border:none;
+							outline:none;
+						}
 
 	section#about ul#credentials {
 		list-style:none;
@@ -4390,76 +4582,5 @@ input, select, textarea {
 		margin-top:10vh;
 	}
 
-	section#specialties {
-		max-width:100%;
-		margin: 0 auto;
-	}
 
-		section#specialties .inner.alt {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: flex-start;
-			width:100%;
-		}
-
-			section#specialties .inner.alt .specialtyCard {
-				margin:1em;
-				margin-left:auto;
-				margin-right:auto;
-				-ms-flex: auto;
-				flex:initial;
-				flex-basis: 23%;
-				width: 100%;
-				position: relative;
-				box-sizing: border-box;
-				padding:10px;
-				height:100%;
-				border:none;
-			}
-			@media(max-width: 1073px) {
-				section#specialties .inner.alt .specialtyCard {
-					flex-basis: 48%;
-				}
-			}
-			@media(max-width: 555px) {
-				section#specialties .inner.alt .specialtyCard {
-					flex-basis: 100%;
-				}
-			}
-
-				section#specialties .inner.alt .specialtyCard a {
-					border:none;
-				}
-			
-					section#specialties .inner.alt .specialtyCard img{
-						width:100%;
-						height:25vh;
-						object-fit:cover;
-					}
-
-				section#specialties .inner.alt .specialtyCard .content {
-					font-size:0.8em;
-				}
-
-					section#specialties .inner.alt .specialtyCard .content h3 {
-						height:2em;
-						color:darkslategrey;
-					}
-
-					section#specialties .inner.alt .specialtyCard .content p {
-						font-size:1.3em !important;
-					}
-
-
-					section#specialties .inner.alt .specialtyCard .content .actions {
-						margin:auto;
-						margin-top:1em;
-						width:min-content;
-					}
-
-						section#specialties .inner.alt .specialtyCard .content .actions a {
-							border-radius:0;
-							border:none;
-							outline:none;
-						}
 
