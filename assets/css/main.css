@@ -1,6 +1,7 @@
 @import url(fontawesome-all.min.css);
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap'); */
 @font-face {
 	font-family: 'Material Icons';
 	font-style: normal;
@@ -43,7 +44,8 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Baloo 2', sans-serif;
+	/* font-family: 'Baloo 2', sans-serif; */
+	font-family:Poppins, sans-serif;
 }
 
 article, aside, details, figcaption, figure,
@@ -189,10 +191,6 @@ input, select, textarea {
 		border-bottom: dotted 1px;
 	}
 
-		a:hover {
-			border-bottom-color: transparent !important;
-		}
-
 	strong, b {
 		font-weight: bold;
 	}
@@ -223,7 +221,8 @@ input, select, textarea {
 		}
 	
 	h1 {
-		font-family:Comfortaa;
+		font-family:Poppins, sans-serif;
+		font-weight:400 !important;
 	}
 
 	h2 {
@@ -1979,6 +1978,7 @@ input, select, textarea {
 		background-color: transparent;
 		color: #828282 !important;
 		box-shadow: inset 0 0 0 2px #e6e6e6;
+		font-weight:400;
 	}
 
 		input[type="submit"]:hover,
@@ -3627,9 +3627,10 @@ input, select, textarea {
 			#header button.primary,
 			#header .button.primary {
 				box-shadow: none;
-				background-color: #ffffff;
+				/* background-color: #ffffff; */
 				/* color: #4696e5 !important; */
-				color:black !important;
+				/* color:black !important; */
+				border:white 2px solid;
 			}
 
 		#header label {
@@ -3759,11 +3760,11 @@ input, select, textarea {
 			color: #d1e5f9;
 		}
 
-		#header a {
+		/* #header a {
 			color: inherit;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 			color: #ffffff;
-		}
+		} */
 
 		#header strong, #header b {
 			color: #ffffff;
@@ -4023,7 +4024,7 @@ input, select, textarea {
 /* Global */
 	.highlight {
 		color:#4EC5F1;
-		font-weight:600;
+		font-weight:500;
 	}
 
 /* Main */
@@ -4124,8 +4125,12 @@ input, select, textarea {
 		}
 
 			header#header .content h1 {
-				text-align:left;
+				text-align:center;
 				margin-left:3vw
+			}
+		
+			header#header .content h1#title {
+				text-align:left;
 			}
 
 			header#header .content  p#siteSynopsis {
@@ -4210,7 +4215,8 @@ input, select, textarea {
 			nav ul li {
 				box-sizing:border-box;
 				display:block;
-				border-bottom:1px solid black;
+				/* border-bottom:1px solid black; */
+				border-bottom:1px solid grey;
 				padding:0;
 			}
 				nav ul li a,	
@@ -4224,8 +4230,10 @@ input, select, textarea {
 				}
 	
 				nav ul li a:hover {
-					color:white;
-					background-color:black;
+					/* color:white; */
+					color:black;
+					/* background-color:black; */
+					background-color: rgb(238, 238, 238);
 				}
 	button#navToggle {
 		position:absolute;
@@ -4234,7 +4242,7 @@ input, select, textarea {
 		height:40px;
 		color:black !important;
 		background-color:white;
-		border:1px solid black;
+		/* border:1px solid black; */
 		padding:0;
 		margin-left:1em;
 		left:0;
@@ -4316,13 +4324,12 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
-		font-family: 'Baloo 2', sans-serif;
 		line-height:1.5;
 	}
 
-	li {
+	/* li {
 		font-family: 'Baloo 2', sans-serif;
-	}
+	} */
 
 	section {
 		text-align:center;
@@ -4352,6 +4359,12 @@ input, select, textarea {
 		@media(max-width: 800px) {
 			section.main {
 				max-width:90%;
+			}
+		}
+
+		@media(max-width: 600px) {
+			section.main {
+				max-width:95%;
 			}
 		}
 
@@ -4391,7 +4404,7 @@ input, select, textarea {
 
 		section p {
 			/* margin: auto; */
-			font-family: 'Baloo 2', sans-serif;
+			/* font-family: 'Baloo 2', sans-serif; */
 			line-height:1.5;
 		}
 
@@ -4437,7 +4450,7 @@ input, select, textarea {
 				flex-basis:80%;
 				max-width:65%;
 				margin:0;
-				margin-left:2em;
+				margin-left:2vw;
 			}
 
 			@media(max-width: 1000px) {
@@ -4455,14 +4468,13 @@ input, select, textarea {
 			}
 
 		section#specialties {
-			margin: 0 auto;
+			/* margin: 0 auto; */
 		}
 	
 			section#specialties .inner.alt {
 				display: flex;
 				flex-flow: row wrap;
 				justify-content: flex-start;
-				/* width:10% !important; */
 			}
 	
 				section#specialties .inner.alt .specialtyCard {
@@ -4470,10 +4482,9 @@ input, select, textarea {
 					-ms-flex: auto;
 					flex:initial;
 					flex-basis: 30%;
-					/* width: 10% !important; */
+					/* max-width:20%; */
 					position: relative;
 					box-sizing: border-box;
-					/* padding:0.1vw !important; */
 					border:none;
 				}
 				@media(max-width: 800px) {

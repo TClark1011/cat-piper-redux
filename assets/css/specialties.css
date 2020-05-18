@@ -47,10 +47,6 @@ body header#header {
     padding-bottom:10em !important;
 }
 
-    /* body header#header h1 {
-        z-index:999999;
-    } */
-
     body header#header .readMore {
         display:none;
     }
@@ -60,7 +56,6 @@ body section {
     margin-bottom:3em;
 }
 
-body section .contact {
-    font-family: 'Baloo 2', sans-serif;
+body section .contactButton {
     margin-top:3em;
 }

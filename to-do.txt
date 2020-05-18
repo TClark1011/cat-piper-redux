@@ -18,15 +18,16 @@
 - Accent colour (like the Laura therapy page)
 - Career thumbnal is slightly lower than the other thumbnails
 - Remove animated page openings
-- Fix "a/h3" tags in specialty cards
 - Crop relationships splash
-- Redesign buttons
+- Crop (liek actually edit the image) the bottom and left out of portrait image in the welcome section
 - Make specialty thumbnails link to specialty pages
 - Remove Spiritual Psychology
 - Add margin to all body text
 - Change fonts ;(
 - redesign contact me page
 - Hide all mentions of spiritual psychology
+- Keep specialty page h1s center aligned
+- Remove unnecessary css (trial and error)
 
 
 MAYBE:
@@ -62,3 +63,7 @@ DONE:
 		+ Keep current thumbnail
 - Width scaling for specialties
 - Specialties in columns
+- Welcome image wrapping issuee (happens on laptop screen)
+- Fix "a/h3" tags in specialty cards
+- Fix specialty card wrapping
+- Redesign buttons
