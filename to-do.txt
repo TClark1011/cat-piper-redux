@@ -5,6 +5,7 @@ AFTER DESIGN IS DONE:
 - Remove unnecessary css (trial and error) (includes commented out stuff)
 - Delete Spiritual psychology code and html page
 - SEO
+- Reduce Image resolution
 
 MAYBE:
 - htaccess file to make urls nicer
