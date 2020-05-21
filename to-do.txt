@@ -1,40 +1,20 @@
-- Add images [potentially very big]
-- Ask about splash title/subtitle changees
+DESIGN:
+- Add happiness center to footer
+- Accent colour (like the Laura therapy page)
+- Hide all mentions of spiritual psychology
+
+NON-DESIGN:
 - Add secondary color decorations (text highlighting, keywords, etc)
 - SEO
-- Larger margins to whole page on desktop site
-- Faq
-	+ Width on laptop
-	+ Darker FAQ question text
-	+ Faq answer smaller
-	+ Answers start at same height
-	+ Font smaller
-	+ Leveled ttext
-- Add happiness center to footer
-- Smaller general text
-- Set no script as default
-- Images
-	+ Photo of Cathy in about me
-- Accent colour (like the Laura therapy page)
-- Career thumbnal is slightly lower than the other thumbnails
-- Remove animated page openings
-- Crop relationships splash
-- Crop (liek actually edit the image) the bottom and left out of portrait image in the welcome section
-- Make specialty thumbnails link to specialty pages
-- Remove Spiritual Psychology
-- Add margin to all body text
-- Change fonts ;(
-- redesign contact me page
-- Hide all mentions of spiritual psychology
-- Keep specialty page h1s center aligned
-- Remove unnecessary css (trial and error)
 
+AFTER DESIGN IS DONE:
+- Remove unnecessary css (trial and error)
+- Delete Spiritual psychology code and html page
 
 MAYBE:
 - htaccess file to make urls nicer
 - Use swiper.js to allow for swiping to open/close nav menu
 - Format list of credentials
-- Change buttons
 
 DONE:
 - About Page
@@ -61,9 +41,34 @@ DONE:
 	+ Relationship images - Man holding hair
 		+ Guy and girl on bench (for page image)
 		+ Keep current thumbnail
+	+ Photo of Cathy in about me
 - Width scaling for specialties
 - Specialties in columns
 - Welcome image wrapping issuee (happens on laptop screen)
 - Fix "a/h3" tags in specialty cards
 - Fix specialty card wrapping
 - Redesign buttons
+- Keep specialty page h1s center aligned
+- Remove Spiritual Psychology
+- Add margin to all body text
+- Change fonts ;(- Remove Spiritual Psychology
+- Add margin to all body text
+- Change fonts ;(
+- redesign contact me page
+- Fix career thumbnal being slightly lower than the other thumbnails
+- Faq (just adding it)
+- Faq
+	+ Answers start at same height
+	+ Darker FAQ question text
+	+ Width on laptop
+	+ Faq answer smaller
+	+ Font smaller
+- Larger margins to whole page on desktop site
+- Smaller general text
+- Add new text
+- Make specialty thumbnails link to specialty pages
+- Crop relationships splash
+- Crop (like actually edit the image) the bottom and left out of portrait image in the welcome section
+- Remove animated page openings
+- Add images [potentially very big]
+- Style learn more text in specialty cards to be more like example site (make it bold text instead of buttons)

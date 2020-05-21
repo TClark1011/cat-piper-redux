@@ -23,7 +23,7 @@ body#relationships header{
             rgba(0, 0, 0, 0.45)
         ),
         url("/images/specialtySplashes/relationships.jpg");
-    background-size: 300%;
+    background-position: center top !important;
 }
 
 body#spiritual header {

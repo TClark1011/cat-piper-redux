@@ -8,8 +8,9 @@
 
 <head>
     <title>Cat Piper Psychology</title>
-	<meta name="description" content="Therapy for high achievers, perfectionists, creatives and anyone who is sick and tired of being anxious
-	and wants things to change" />
+	<meta name="description" content="Therapy for high achievers, perfectionists, creatives and anyone who is
+		sick and tired of being anxious
+		and wants things to change" />
 	<meta charset="utf-8" />
 	<meta name="keywords" content="Psychology,Catherine Piper,Cat Piper,Therapy,Stress,Anxiety">
   	<meta name="author" content="Thomas Clark">
@@ -23,44 +24,27 @@
         <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
     <style>
-        .contactIconWrapper {
-            width:10em;
-            height:10em;
-            margin:auto;
-            border: 5px solid rgb(130, 130, 130);
-            display:flex;
-            font-family:'Material Icons';
-            border-radius:100%;
-            margin-bottom:2em;
-            margin-top:2em;
-            cursor:pointer;
-            transition:color 0.2s, border-color 0.2s;
-        }
 
-        .contactIconWrapper:hover, 
-        .contactIconWrapper:hover .contactIcon{
-            color:black;
-            border-color:black;
-            transition:color 0.2s, border-color 0.2s;
-        }
-
-        .contactIconWrapper .contactIcon {
-            display:block;
-            margin:auto;
-            font-size:5em;
-            transition:color 0.2s;
-            font-family:'Material Icons';
+        header#header {
+            background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.45), 
+                    rgba(0, 0, 0, 0.45)
+                ),
+                url("/images/contact.jpg") center;
         }
 
         .contactDetail {
-            font-size:200%;
-            margin-top:1em;
-            margin-bottom:1em;
+            /* font-size:0.8em; */
+            margin: 2em 0;
             display:block;
             text-decoration:none;
             border:none;
             cursor:pointer;
             word-wrap:break-word;
+            border-top:2px solid;
+            border-bottom:2px solid;
+            padding:0.5em 0;
         }
 
         .contactDetail:hover {
@@ -78,15 +62,6 @@
             .contactDetail {
                 font-size:150%;
             }
-        }
-
-        body#contact header#header {
-            background: 
-                linear-gradient(
-                    rgba(0, 0, 0, 0.45), 
-                    rgba(0, 0, 0, 0.45)
-                ),
-                url("/images/contact.jpg") center;
         }
 
     </style>
@@ -112,19 +87,15 @@
                 <li><a href="tel:0414700761" class="button primary icon solid">phone</a></li>
                 <li><a href="mailto:cat@catpiperpsychology.com" class="button primary icon solid">email</a></li>
 			</ul>
-            <p id=readMoreText class=readMore>Read More</p>
-            <span id=readMoreArrow class="material-icons readMore">keyboard_arrow_down</span>
         </div>
     </header>
 
     <section class="main">
-        <div class=contactIconWrapper id=phoneWrapper onClick="location.href='mailto:cat@catpiperpsychology.com'"><h2 id=emailIcon class=contactIcon>email</h2></div>
-        <a class=contactDetail href="mailto:cat@catpiperpsychology.com">cat@catpiperpsychology.com</a>
+        <a class="contactDetail" href="mailto:cat@catpiperpsychology.com">cat@catpiperpsychology.com</a>
         <p class="body">
             Let me know your number and I can text or phone you back (usually within 24 hours I promise 😊)
         </p>
-        <div class=contactIconWrapper onClick="location.href='tel:0414700761'"><h2 id=phoneIcon class=contactIcon>phone</h2></div>
-        <a class=contactDetail href="tel:0414700761">0414700761</a>
+        <a class="contactDetail" href="tel:0414700761">0414700761</a>
         <p class="body">
             You can text me and I will respond with either a text or a phone call – which ever you prefer.<br><br>
 

@@ -49,15 +49,6 @@
 
 })(jQuery);
 
-$(document).ready(function() {
-	setSpecialityCardHeight();
-	setPortraitWidth();
-})
-
-$(window).resize(function() {
-	setSpecialityCardHeight();
-})
-
 $('.readMore').click(function(evt) {
     window.scrollBy({
         top: $("header#header").innerHeight(),
@@ -65,22 +56,23 @@ $('.readMore').click(function(evt) {
     });
 })
 
-function setSpecialityCardHeight() {
-	//# Set height of specialty card content to be equal to the tallest one
-	if ($(".specialtyCard").css("flex-basis") != "100%") {
+function documentPrep() {
+	equalizeHeight(".specialtyCard .content p",$(".specialtyCard").css("flex-basis") != "100%")
+	equalizeHeight(".specialtyCard h3.specialtyTitle",$(".specialtyCard").css("flex-basis") != "100%")
+	equalizeHeight(".question .questionTitle", $(".question").css("flex-basis") != "100%")
+	setPortraitWidth();
+}
+
+function equalizeHeight(selector, condition) {
+	condition = condition || true
+	if (condition) {
 		var maxHeight = -1;
-		$(".specialtyCard .content p").each(function() {
+		$(selector).each(function() {
 			maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
 		});
-		$(".specialtyCard .content p").each(function() {
+		$(selector).each(function() {
 			$(this).height(maxHeight);
-		});
-		maxHeight = -1;
-		$(".specialtyCard h3.specialtyTitle").each(function() {
-			maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-		});
-		$(".specialtyCard h3.specialtyTitle").each(function() {
-			$(this).height(maxHeight);
+			// $(this).css("min-height",maxHeight)
 		});
 	}
 }
@@ -88,3 +80,7 @@ function setSpecialityCardHeight() {
 function setPortraitWidth() {
 	$("section#welcome .inner img#portrait").height($("section#welcome .inner p").height()*0.9)
 }
+
+// $(document).ready(documentPrep())
+// $(window).resize(documentPrep())
+document.onload = documentPrep();
