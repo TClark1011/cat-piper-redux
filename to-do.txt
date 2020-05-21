@@ -1,15 +1,10 @@
 DESIGN:
-- Add happiness center to footer
 - Accent colour (like the Laura therapy page)
-- Hide all mentions of spiritual psychology
-
-NON-DESIGN:
-- Add secondary color decorations (text highlighting, keywords, etc)
-- SEO
 
 AFTER DESIGN IS DONE:
-- Remove unnecessary css (trial and error)
+- Remove unnecessary css (trial and error) (includes commented out stuff)
 - Delete Spiritual psychology code and html page
+- SEO
 
 MAYBE:
 - htaccess file to make urls nicer
@@ -72,3 +67,5 @@ DONE:
 - Remove animated page openings
 - Add images [potentially very big]
 - Style learn more text in specialty cards to be more like example site (make it bold text instead of buttons)
+- Add happiness center to footer
+- Hide all mentions of spiritual psychology

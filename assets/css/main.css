@@ -4650,6 +4650,12 @@ input, select, textarea {
 	footer {
 		margin-top:10vh;
 	}
+	
+		footer li a:not(.icon) {
+			font-size:2em;
+			text-decoration:none;
+			border:none;
+		}
 
 
 
