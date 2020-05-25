@@ -1,11 +1,12 @@
 DESIGN:
-- Accent colour (like the Laura therapy page)
 
-AFTER DESIGN IS DONE:
+AFTER DESIGN IS DONE AND APPROVED:
 - Remove unnecessary css (trial and error) (includes commented out stuff)
 - Delete Spiritual psychology code and html page
 - SEO
 - Reduce Image resolution
+- Remove references to 'srolly'
+- FIX SPELLING
 
 MAYBE:
 - htaccess file to make urls nicer
@@ -70,3 +71,4 @@ DONE:
 - Style learn more text in specialty cards to be more like example site (make it bold text instead of buttons)
 - Add happiness center to footer
 - Hide all mentions of spiritual psychology
+- Accent colour (like the Laura therapy page)
