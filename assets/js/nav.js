@@ -1,14 +1,8 @@
 function toggleNav() {
     if ($("nav").hasClass("open")) {
-        $("nav").removeClass("open");
-        // $("button#navToggle").css("left", "0");
+        $("nav").removeClass("open"); 
     } else {
-        $("nav").addClass("open");
-        // var navWidth = parseInt($("nav").css("width").replace('px', ''));
-        // $("button#navToggle").css({
-        //     transition  :   "left 0.5s",
-        //     left        :   navWidth
-        // });
+        $("nav").addClass("open"); 
     }
 }
 

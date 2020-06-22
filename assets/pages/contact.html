@@ -34,16 +34,13 @@
                 url("/images/contact.jpg") center;
         }
 
-        .contactDetail {
-            /* font-size:0.8em; */
+        .contactDetail { 
             margin: 2em 0;
             display:block;
             text-decoration:none;
             border:none;
             cursor:pointer;
-            word-wrap:break-word;
-            border-top:2px solid;
-            border-bottom:2px solid;
+            word-wrap:break-word; 
             padding:0.5em 0;
         }
 
@@ -68,15 +65,7 @@
 
 <body id=contact>
     <button id=navToggle><span>menu</span></button>
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/assets/pages/stress-anxiety.html">Stress and Anxiety</a></li>
-            <li><a href="/assets/pages/career-personal.html">Career and Interpersonal Coaching</a></li>
-            <li><a href="/assets/pages/relationships.html">Relationship Counselling</a></li>
-            <li><a href="/assets/pages/spiritual.html">Spiritual Psychology</a></li>
-            <li><a href="/assets/pages/contact.html">Contact Me</a></li>
-        </ul>
+    <nav w3-include-html="/assets/pages/components/nav-list.html"> 
     </nav>
 
     <header id="header" class="specialty careerPersonal">
@@ -113,12 +102,7 @@
         </p>
     </section>
 
-    <footer id="footer">
-		<ul class="icons">
-            <li><a href="https://www.facebook.com/catpiperpsychology/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="https://www.facebook.com/TheHappinessCentreSydney/"><span clas="label">HC</span></a></li>
-		</ul>
-		<p class="copyright">Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+    <footer id="footer" w3-include-html="/assets/pages/components/footer.html"> 
 	</footer>
 
     <!-- Scripts -->

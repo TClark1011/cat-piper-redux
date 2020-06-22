@@ -33,31 +33,24 @@ Replace: ="$1"> -->
 
 	<body>
 		<button id="navToggle"><span>menu</span></button>
-		<nav>
-			<ul>
-				<li><a href="/index.html">Home</a></li>
-				<li><a href="/assets/pages/stress-anxiety.html">Stress and Anxiety</a></li>
-				<li><a href="/assets/pages/career-personal.html">Career and Interpersonal
-						Coaching</a></li>
-				<li><a href="/assets/pages/relationships.html">Relationship Counselling</a></li>
-				<li><a href="/assets/pages/spiritual.html">Spiritual Psychology</a></li>
-				<li><a href="/assets/pages/contact.html">Contact Me</a></li>
-			</ul>
+		<nav w3-include-html="/assets/pages/components/nav-list.html"> 
 		</nav>
 
 		<!-- Header -->
-		<header id="header" class="home">
-
-
+		<header id="header" class="home"> 
 			<div class="content">
 				<h1 id="title">Cat Piper Psychology</h1>
-				<p id="siteSynopsis">Therapy for high achievers, perfectionists, creatives
+				<h2 id="siteSynopsis">Therapy for high achievers, perfectionists, creatives
 					and anyone who is
 					sick and tired of being anxious
-					and wants things to change</p>
+					and wants things to change</h2>
+				<h3 id="subSynopsis"></h3>
 				<ul class="actions">
-					<li><a href="assets/pages/contact.html" class="button primary icon solid
-							contactButton">contact me</a>
+					<!-- <li><a href="assets/pages/contact.html" class="button primary icon solid
+							contactButton">meet me</a>
+					</li> -->
+					<li class="meetMeButton"><a class="button primary icon solid
+						contactButton">meet me</a>
 					</li>
 				</ul>
 				<div class="readMoreWrapper">
@@ -133,6 +126,8 @@ Replace: ="$1"> -->
 			</div>
 			<a href="assets/pages/contact.html" class="button primary icon solid
 				contactButton">contact me</a>
+			<!-- <a href="assets/pages/contact.html" class="button primary icon solid
+				contactButton">find out more</a> -->
 		</section>
 
 		<section id="specialties" class="wrapper main">
@@ -215,36 +210,7 @@ Replace: ="$1"> -->
 									More</a></li>
 						</ul>
 					</div>
-				</section>
-				<!-- this still has the old text -->
-				<!-- <section id="spiritual" class="specialtyCard" style="display:none">
-						<img src="images/specialtySplashes/spiritualThumb.jpg" alt="dream catcher"
-							/>
-						<div class="content">
-							<a href="/assets/pages/spiritual.html" class="specialtyName">
-								<h3 class="specialtyTitle">Spiritual Psychology</h3>
-							</a>
-							<p>
-								Sometimes the more usual methods of Psychology just aren’t enough to
-								shift the patterns in your
-								life.<br><br>
-								If you are stuck in a relationship (past or present) and have tried
-								everything to get over it ,
-								or you have patterns of behaviours that really do not work for but no
-								matter what you do they do
-								not change then we can work at a different level.
-							</p>
-							<ul class="actions">
-								<li><a href="/assets/pages/spiritual.html" class="button primary icon
-										solid">learn more</a>
-								</li>
-								<li><a href="assets/pages/contact.html" class="button primary icon solid
-										contactButton">contact
-										me</a>
-								</li>
-							</ul>
-						</div>
-					</section> -->
+				</section> 
 			</div>
 		</section>
 
@@ -379,14 +345,7 @@ Replace: ="$1"> -->
 		</section>
 
 		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<li><a href="https://www.facebook.com/catpiperpsychology/" class="icon
-						brands fa-facebook-f"><span
-							class="label">Facebook</span></a></li>
-				<li><a href="https://www.facebook.com/TheHappinessCentreSydney/"><span clas="label">HC</span></a></li>
-			</ul>
-			<p class="copyright">Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+		<footer id="footer" w3-include-html="/assets/pages/components/footer.html"> 
 		</footer>
 
 		<!-- Scripts -->
