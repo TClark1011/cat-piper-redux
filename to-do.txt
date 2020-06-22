@@ -1,12 +1,9 @@
-FINAL STRETCH
-- Remove unnecessary css (trial and error) (includes commented out stuff)
+FINAL STRETCH 
 - Delete Spiritual psychology code and html page
 - SEO
 - Reduce Image resolution
 - Remove references to 'scrolly'
 - FIX SPELLING 
-- Fix specialty card learn more buttons (they are overlapping with body text) 
-- Fix issue with title (its centering like its on mobile)
 - Change contact button on splash page to "meet me" and link to to the FAQ 
 
 MAYBE:
@@ -18,7 +15,10 @@ MAYBE:
 	+ FAQ/Specialties spacing
 
 DONE:
-- Change Add third tier of heading to splash (it is there right now, its just empty)
+- Remove unnecessary css (trial and error) (includes commented out stuff)
+- Fix specialty card learn more buttons (they are overlapping with body text) 
+- Fix issue with title (its centering like its on mobile)
+- Add third tier of heading to splash (it is there right now, its just empty)
 - Try out other background colors for FAQ cards
 - Fix "Career/Interpersonal Coaching" line wrapping in nav menu 
 - Make body font smaller (headers is fine)

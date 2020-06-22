@@ -3,7 +3,7 @@ $(window).on("load",function() {
 	documentPrep(); 
 
 	$('.readMore').click(function(evt) {
-		window.scrollBy({
+		window.scrollTo({
 			top: $("header#header").innerHeight(),
 			behavior:'smooth'
 		});
@@ -11,7 +11,7 @@ $(window).on("load",function() {
 	
 	$('.meetMeButton').click(function(evt) {
 		console.log("a")
-		window.scrollBy({
+		window.scrollTo({
 			top: $("#welcome").offset().top,
 			behavior:'smooth'
 		});
