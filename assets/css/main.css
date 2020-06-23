@@ -1070,9 +1070,17 @@ body {
 				margin-left:3vw;
 				text-align:left;
 				max-width:60%;
-				font-weight:400;
+				font-weight:300;
 				font-size:32px;
 			} 
+
+				@media screen and (max-width: 1280px) {
+
+					header#header .content #siteSynopsis {
+						line-height:1em;
+						max-width:100%;
+					} 
+				}
 
 			header#header .content #subSynopsis {
 				font-size:24px;
@@ -1103,6 +1111,7 @@ body {
 		background-color:white;
 		z-index:99;
 		border-right:1px solid black;
+		width:280px;
 		/* width is set in media query for screen of minimum width 1680 */
 	}
 	
@@ -1112,6 +1121,7 @@ body {
 		
 		nav:not(.open) { 
 			transition: left 0.5s;
+			left:-280px;
 		}
 			nav ul {
 				padding:0;

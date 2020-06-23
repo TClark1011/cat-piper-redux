@@ -1,10 +1,8 @@
 FINAL STRETCH 
-- Delete Spiritual psychology code and html page
-- SEO
-- Reduce Image resolution
-- Remove references to 'scrolly'
+- SEO 
 - FIX SPELLING 
 - Change contact button on splash page to "meet me" and link to to the FAQ 
+- Add "Couch"
 
 MAYBE:
 - htaccess file to make urls nicer
@@ -15,6 +13,8 @@ MAYBE:
 	+ FAQ/Specialties spacing
 
 DONE:
+- Delete Spiritual psychology code and html page
+- Reduce Image resolution
 - Remove unnecessary css (trial and error) (includes commented out stuff)
 - Fix specialty card learn more buttons (they are overlapping with body text) 
 - Fix issue with title (its centering like its on mobile)
