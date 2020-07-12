@@ -16,8 +16,7 @@ $(window).on("load",function() {
 			behavior:'smooth'
 		});
 	})
-})
-
+}) 
 /*
 	Fractal by HTML5 UP
 	html5up.net | @ajlkn

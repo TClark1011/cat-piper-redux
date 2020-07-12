@@ -25,3 +25,9 @@ $('body').on('touchstart', function(evt){
 $('nav').on('touchstart',function(evt) {
     evt.stopPropagation();
 })
+
+$(document).on("scroll", function() {
+    if ($("nav").hasClass("open")) {
+        $("nav").removeClass("open"); 
+    }
+})
